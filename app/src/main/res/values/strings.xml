@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">JsonParsingDemo</string>
+    <string name="json1">{
+          "login": "18",
+          "id": 16629302,
+          "node_id": "MDQ6VXNlcjE2NjI5MzAy",
+          "avatar_url": "hbjhb",
+          "gravatar_id": "gfc",
+          "url": "bvvjh",
+        "address":{
+            "house_no":"123",
+            "gali_no":"420",
+            "city":"delhi",
+            "country":"India"
+        }
+        } </string>
+</resources>
