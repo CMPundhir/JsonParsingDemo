@@ -3,24 +3,31 @@ package com.cmpundhir.cm.jsonparsingdemo;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.cmpundhir.cm.jsonparsingdemo.model.GithubUserPojo;
 import com.google.gson.Gson;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
-
+    ImageView img1,img2;
     private String TAG = "JSON_PARSING";
-
+    String imgUrl = "https://avatars2.githubusercontent.com/u/1825798?v=4";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        img1 = findViewById(R.id.img1);
+        img2 = findViewById(R.id.img2);
         firstTarika();
         secondTarika();
+        Glide.with(this).load(imgUrl).into(img1);
+        Picasso.get().load(imgUrl).into(img2);
     }
 
     public void firstTarika(){
